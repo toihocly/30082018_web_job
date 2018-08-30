@@ -121,6 +121,162 @@
     box-shadow: 1px 1px 5px 0 rgba(204,204,204,0.75);
 }
 
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.nav > li.disabled > a {
+  color: #777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #777;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #337ab7;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #555;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 2px solid #555;
+  border-radius: 4px 4px 0 0;
+  color:#555;
+  font-family:utmavobold;
+  font-size: 12px;
+  background: #fff;
+}
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #fff;
+  cursor: default;
+  background-color: #555;
+  border: 1px solid #ddd;
+  /* //border-bottom-color: transparent; */
+  border-bottom-color:#555;
+}
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+.sp {
+      width: 270px;
+      background: #f4f4f4;
+      float: left;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #515151;
+      position: relative;
+
+    }
+
+    .sp .title {
+      max-height: 55px;
+      line-height: 35px;
+      padding-left: 5px;
+    }
+
+    .sp .title p {
+      text-align: center;
+    }
+    .sp .title p a { font-weight: bold;}
+
+    .sp .image {
+      height: 150px;
+    }
+
+    .sp .context {
+      text-align: center;
+      overflow: hidden;
+      width: 100%;
+      height: 51px;
+      padding: 5px;
+      font-size: 13px;
+      line-height: 16px;
+      font-family: Myriad Pro;
+      overflow: hidden;
+    }
+
+    .sp .price {
+      height: 36px;
+      line-height: 36px;
+      padding: 5px;
+    }
+
+    .sp .price span {
+      float: left;
+      font-family: Myriad Pro;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .sp .price a img {
+      float: right;
+      margin-top: 5px;
+    }
+
+    .mau_sp {
+      color: #616161;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: utmavobold;
+    }
+
   </style>
 </head>
 
@@ -136,16 +292,16 @@
                   <!-- -------------------        -->
                   <div style=" height: 450px;  overflow: hidden; transform: perspective(2000px);"
                     debug-id="slide-4">
-                    <img u="image" class="img-fluid" src="images/Product_Details/1.png" style=" height: 450px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;">
+                    <img id="img-show" u="image" class="img-fluid" src="images/Product_Details/1.png" style=" height: 450px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;">
                   </div>
                   <div  class="jssort01" style="  height: 100px; ">
                       <div  style=" background:rebeccapurple; margin:0 auto; width: 550px;" >
                             <ul class="list-img" >
-                                <li><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/1.png" /> </a></li>
-                                <li><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/2.jpg" /> </a></li>
-                                <li><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/3.jpg" /> </a></li>
-                                <li><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/4.jpg" /> </a></li>
-                                <li><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/5.jpg" /> </a></li>
+                                <li id="img"><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/1.png" /> </a></li>
+                                <li id="img"><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/2.jpg" /> </a></li>
+                                <li id="img"><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/3.jpg" /> </a></li>
+                                <li id="img"><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/4.jpg" /> </a></li>
+                                <li id="img"><a href="javascrip:;"><img style=" width:72px; height:72px;" src="images/Product_Details/5.jpg" /> </a></li>
                               </ul>
                       </div>
                     </div>
@@ -179,7 +335,7 @@
               <table class="table thongtinctsp" style="margin-left: 20px;background: #fff;box-shadow: 3px 3px 5px #515151;border-radius: 5px;">
                      <tbody>
                        <tr><td class="title_ctsp">Giá: </td><td class="title_ctsp1" style="font-size: 16px;font-weight: bold;">1.684.000.000 VNĐ</td></tr>
-                       <tr><td class="title_ctsp">Xuất xứ: </td><td class="title_ctsp1">Việt Nam LR</td></tr>
+                       <tr><td class="title_ctsp">Xuất xứ: </td><td class="title_ctsp1">Việt Nam LR</td></tr>
                        <tr><td class="title_ctsp">Dáng xe: </td><td class="title_ctsp1">sedan</td></tr>
                        <tr><td class="title_ctsp">Số chỗ ngồi: </td><td class="title_ctsp1">5</td></tr>
                        <tr><td class="title_ctsp">Số cửa: </td><td class="title_ctsp1">4</td></tr>
@@ -187,15 +343,15 @@
                        <tr><td class="title_ctsp">Dung tích động cơ: </td><td class="title_ctsp1">1.996 cc</td></tr>
                        <tr><td class="title_ctsp">Công suất cực đại: </td><td class="title_ctsp1">135 kW [184 hp] tại 5500 vòng/phút</td></tr>
                        <tr><td class="title_ctsp">Moment xoắn cực đại: </td><td class="title_ctsp1">300 Nm tại 1200 - 4000 vòng/phút</td></tr>
-                       <tr><td class="title_ctsp">Hộp số: </td><td class="title_ctsp1">9 cấp</td></tr>
-                       <tr><td class="title_ctsp">Kiểu dẫn động: </td><td class="title_ctsp1">cầu sau</td></tr>
+                       <tr><td class="title_ctsp">Hộp số: </td><td class="title_ctsp1">9 cấp</td></tr>
+                       <tr><td class="title_ctsp">Kiểu dẫn động: </td><td class="title_ctsp1">cầu sau</td></tr>
                        <tr><td class="title_ctsp">Tốc độ cực đại: </td><td class="title_ctsp1">212 (km/h)</td></tr>
                        <tr><td class="title_ctsp">Thời gian tăng tốc 0-100km/h: </td><td class="title_ctsp1">8,0s (0 – 100 km/h)</td></tr>
                        <tr><td class="title_ctsp">Mức tiêu hao nhiên liệu: </td><td class="title_ctsp1">7,82 (l/100km)</td></tr>
                        <tr><td class="title_ctsp">Thể tích thùng nhiên liệu: </td><td class="title_ctsp1"></td></tr>
                        <tr><td class="title_ctsp">Model: </td><td class="title_ctsp1">2018</td></tr>
-                       <tr><td class="title_ctsp">Bảo hành: </td><td class="title_ctsp1">3 năm không giới hạn số km</td></tr>
-                       <tr><td class="title_ctsp">Khuyến mãi: </td><td class="title_ctsp1">dù, nón, viết Mercedes</td></tr>
+                       <tr><td class="title_ctsp">Bảo hành: </td><td class="title_ctsp1">3 năm không giới hạn số km</td></tr>
+                       <tr><td class="title_ctsp">Khuyến mãi: </td><td class="title_ctsp1">dù, nón, viết Mercedes</td></tr>
                    </tbody>
                  </table>
                  <fb:like href="http://auto-car.vn/san-pham/mercedes-glc-200-m480" width="50" layout="button_count" show_faces="true" send="true" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fauto-car.vn%2Fsan-pham%2Fmercedes-glc-200-m480&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=50"><span style="vertical-align: bottom; width: 122px; height: 20px;"><iframe name="f27db83924a0c7c" width="50px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FQX17B8fU-Vm.js%3Fversion%3D42%23cb%3Df327b4a614e190c%26domain%3Dauto-car.vn%26origin%3Dhttp%253A%252F%252Fauto-car.vn%252Ff2702e8ea29384%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fauto-car.vn%2Fsan-pham%2Fmercedes-glc-200-m480&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=50" style="border: none; visibility: visible; width: 122px; height: 20px;" class=""></iframe></span></fb:like> 
@@ -268,13 +424,115 @@
 
     <!-- ------------------------------------------------ -->
   </section>
-
+<section id="v2" class="container">
+<h1>SẢN PHẨM CÙNG LOẠI</h1>
+    <!-- ------------------------------------------ -->
+    <div class="row">
+    <div class="col-3">
+        <div class="sp">
+          <div class="title">
+            <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
+          </div>
+          <div class="image">
+            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+          </div>
+          <div class="context">
+            NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
+            thoại thân thiện </div>
+          <div class="price">
+            <span>1.684.000.000 VNĐ</span>
+            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <!--end col -3-->
+      <div class="col-3">
+        <div class="sp">
+          <div class="title">
+            <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
+          </div>
+          <div class="image">
+            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+          </div>
+          <div class="context">
+            NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
+            thoại thân thiện </div>
+          <div class="price">
+            <span>1.684.000.000 VNĐ</span>
+            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <!--end col -3-->
+      <div class="col-3">
+        <div class="sp">
+          <div class="title">
+            <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
+          </div>
+          <div class="image">
+            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+          </div>
+          <div class="context">
+            NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
+            thoại thân thiện </div>
+          <div class="price">
+            <span>1.684.000.000 VNĐ</span>
+            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <!--end col -3-->
+      <div class="col-3">
+        <div class="sp">
+          <div class="title">
+            <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
+          </div>
+          <div class="image">
+            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+          </div>
+          <div class="context">
+            NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
+            thoại thân thiện </div>
+          <div class="price">
+            <span>1.684.000.000 VNĐ</span>
+            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <!--end col-3 -->
+    </div>
+    <!-- end row-->
+</section>
   <div>Footer</div>
-
-
-
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+<script>
+//click thay đổi hình ảnh
+
+$('#img ').on('click', function () {
+    var image = this.getElementsByTagName('img');
+    var src = image[0].getAttribute('src');
+    console.log(src);
+    var img_show = document.getElementById('img-show').src =src ;
+});
+
+
+$('.nav-tabs li ').on('click', function () {
+  var nav_tabs = document.getElementsByClassName('nav-tabs');
+  console.log(nav_tabs);
+  for (let index = 0; index < nav_tabs[0].childElementCount; index++) {
+    var element = nav_tabs[0].children[index];
+     element.classList =''
+  }
+  this.classList = 'active'
+});
+
+
+
+</script>
+
+
 </body>
 
 </html>
