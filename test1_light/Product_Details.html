@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>News</title>
+  <title>THÔNG TIN CHI TIẾT</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
   <style>
@@ -277,6 +277,10 @@
       font-family: utmavobold;
     }
 
+    .btn_chuc_nang{
+      font-family: uvnhongha;text-transform: uppercase;font-size: 16px;color:#fff;padding: 10px 40px;background: #9d9d9d;border-bottom: 3px solid #ccc;
+    }
+
   </style>
 </head>
 
@@ -322,9 +326,9 @@
                 </div>
                 <div class=" col-lg-6" style="padding-top: 20px;">  
                 <div class="efficiency-rating text-center padding-vertical-15 margin-bottom-40">
-                    <a href="nhan-bao-gia" style="font-family: uvnhongha;text-transform: uppercase;font-size: 17px;color:#fff;padding: 10px 44px;background: #9d9d9d;border-bottom: 3px solid #ccc;">Nhận báo giá</a>
+                    <a  href="javascript:;" onclick="btnNhanBaoGia()"class="btn_chuc_nang " style="font-size:17px; padding: 10px 44px;">Nhận báo giá</a>
                     <div class="clear" style="margin-top: 40px;"></div>
-                    <a href="dang-ki-lai-thu" style="font-family: uvnhongha;text-transform: uppercase;font-size: 16px;color:#fff;padding: 10px 40px;background: #9d9d9d;border-bottom: 3px solid #ccc;">Đăng kí lái thử</a>
+                    <a href="Try_Drive.html"  class="btn_chuc_nang " style="font-size:16px;">Đăng kí lái thử</a>
                 </div>   
                 </div>
             </div>
@@ -441,7 +445,7 @@
             thoại thân thiện </div>
           <div class="price">
             <span>1.684.000.000 VNĐ</span>
-            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+            <a href="Product_Details.html"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
           </div>
         </div>
       </div>
@@ -452,14 +456,14 @@
             <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
           </div>
           <div class="image">
-            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+            <img src="images/Prodcuts/sp2.png" class="img-auto" />
           </div>
           <div class="context">
             NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
             thoại thân thiện </div>
           <div class="price">
             <span>1.684.000.000 VNĐ</span>
-            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+            <a href="Product_Details.html"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
           </div>
         </div>
       </div>
@@ -470,14 +474,14 @@
             <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
           </div>
           <div class="image">
-            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+            <img src="images/Prodcuts/sp3.png" class="img-auto" />
           </div>
           <div class="context">
             NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
             thoại thân thiện </div>
           <div class="price">
             <span>1.684.000.000 VNĐ</span>
-            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+            <a href="Product_Details.html"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
           </div>
         </div>
       </div>
@@ -488,14 +492,14 @@
             <p> <a class="mau_sp" href="javascript:;">Mercedes GLC 200</a> </p>
           </div>
           <div class="image">
-            <img src="images/Prodcuts/sp1.png" class="img-auto" />
+            <img src="images/Prodcuts/sp4.jpg" class="img-auto" />
           </div>
           <div class="context">
             NEW - GLC 200: Mặt ga lăng GLC 300 coupe, Ốp gỗ màu nâu sang trọng, Hệ thống Apple Carplay và Android Auto giao diện điện
             thoại thân thiện </div>
           <div class="price">
             <span>1.684.000.000 VNĐ</span>
-            <a href="javascript:;"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
+            <a href="Product_Details.html"><img src="images/Prodcuts/buynow.png" alt="icon"></a>
           </div>
         </div>
       </div>
@@ -509,6 +513,12 @@
   <script src="js/bootstrap.min.js"></script>
 <script>
 //click thay đổi hình ảnh
+
+function btnNhanBaoGia()
+{
+
+  alert("Đang xử lý yêu cầu . Xin đợi trong giây lát. Cảm ơn");
+}
 
 $('#img ').on('click', function () {
     var image = this.getElementsByTagName('img');
