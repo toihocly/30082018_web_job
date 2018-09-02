@@ -6,34 +6,26 @@
   <title>HOME</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/default.css" />  
+  
   <style>
-    header {
-      padding: 0 !important;
-    }
+    header { padding: 0 !important;}
 
-    section {
-      margin-top: 50px;
-    }
+    section {margin-top: 50px; }
 
-    .container-fluid {
-      padding: 0 !important;
-    }
+    .container-fluid { padding: 0 !important; }
 
-    .header-parent {
-      position: relative;
-    }
+    .header-parent { position: relative;}
 
-    .header-parent .child-logo {
-      position: absolute;
-      z-index: 999999;
-    }
-
+    .header-parent .child-logo { position: absolute; z-index: 999999;}
+    .header-parent .child-menu {position: absolute; z-index: 9999999; top: 0;right: 0; }
+    .header-parent .menu-active:hover{background:red; z-index: 99999;}
     .img-fluid {
       height: auto;
       width: 100%;
     }
 
-    .con {
+    .child {
       position: absolute;
       z-index: 15
     }
@@ -60,7 +52,7 @@
       text-align: center;
     }
 
-    .anime {
+    .animate {
       animation: chop 1.5s infinite;
     }
 
@@ -79,185 +71,102 @@
     footer {
       margin-top: 100px;
     }
+   
 
-    input:hover {
-      outline: 0;
-    }
+.sidenav {
+  height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-    input {
-      outline: 0;
-      border-radius: 30px;
-      border: none;
-      padding-left: 20px;
-      padding-right: 60px;
-      height: 50px;
-      width: 100%;
-      background: #996c1a;
-      border: 0;
-      color: white;
-      line-height: 30px;
-    }
-
-    button:hover {
-      padding-right: 20px;
-      cursor: pointer;
-    }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
   </style>
 </head>
 
 <body>
-  <header class="container-fluid header-parent">
-    <div class="logo child-logo"> <img src="logo/logo.jpg" /> </div>
-    <!--end logo-->
-
-    <img src="images/light.png" style=" width:100% ; height:auto;" class="img-fluid con anime " /> <img src="images/MainCar.jpg"
-      style=" width:100% ; height:auto;" class="img-fluid cha" />
-
-  </header>
-
-  <section id="v1" class="container-fluid">
-<div class="container">
-    <div class="row">
-        <div class="col-7">
-          <h1>ABOUT US</h1>
-          <p>Công ty TNHH TechCar được thành lập năm 1988. Công ty chúng tôi đã có nhiều thành công trong lĩnh vực bán xe với
-            sự hợp tác của nhiều thương hiệu xe hơi nổi tiếng trên thế giới. Với chúng tôi, khách hàng luôn được tư vấn nhiệt
-            tình, hướng dẫn cụ thể trước khi mua xe và chăm sóc cũng như đi lại sau khi mua xe.</p>
-          <a href="#"><p class="continue float-right">Continuing >></p> </a>
-        </div>
-        <div class="col-5">
-          <img src="images/helloworld.jpg" alt="chua co anh" class="img-fluid" />
-        </div>
-  
-      </div>
-</div>
-   
-
-  </section>
-  <section id="v2" class="container-fluid">
-    <div class="container">
-        <h1>HIGHLIGHTS PRODUCTS</h1>
-        <div class="row">
-          <div class="col-4"> <img src="" alt="khong co anh" class="img-fluid">
-            <h3>???????</h3>
-            <hr/>
-            <p>???????????????</p>
-          </div>
-          <div class="col-4"> <img src="" alt="khong co anh" class="img-fluid">
-            <h3>???????</h3>
-            <hr/>
-            <p>???????????????</p>
-          </div>
-          <div class="col-4"> <img src="" alt="khong co anh" class="img-fluid">
-            <h3>???????</h3>
-            <hr/>
-            <p>???????????????</p>
-          </div>
-        </div>
-    </div>
-  
-  </section>
-  <section id="news" class="container-fluid">
-        <h1>NEWS</h1>
-        <div class="row">
-          <div class="col-6 first-product">
-            <div class="parent-text"> <img src="images/products/show1.jpg" alt="chua co anh" class="img-fluid" />
-              <div class="child-text">
-                <h3>?????????????????</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 ">
-            <div class="row">
-              <div class="col-6 next-product ">
-                <div class="parent-text"> <img src="images/products/show2.jpg" alt="chua co anh" class="img-fluid" />
-                  <div class="child-text">
-                    <h3>?????????????????</h3>
-                  </div>
-                </div>
-                <div class="parent-text"> <img src="images/products/show4.png" alt="chua co anh" class="img-fluid" />
-                  <div class="child-text">
-                    <h3>?????????????????</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 next-product ">
-                <div class="parent-text"> <img src="images/products/show3.jpg" alt="chua co anh" class="img-fluid" />
-                  <div class="child-text">
-                    <h3>?????????????????</h3>
-                  </div>
-                </div>
-                <div class="parent-text"> <img src="images/products/show5.jpg" alt="chua co anh" class="img-fluid" />
-                  <div class="child-text">
-                    <h3>?????????????????</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end col-6 -->
-    </div>
+    <header class="container-fluid header-parent">
+        <div class="logo child-logo"> <img src="logo/logo.jpg" /> </div>
+        <!--end logo-->
     
-  </section>
-  <footer class="container-fluid">
-    <div class="f1" style="background:#BC8420; height: 400px; ">
-      <div class="contact">
-        <div class="container" style=" padding-top: 100px;">
-          <div class="row">
-            <div class=" col-8 offset-2">
-              <!-- Điền vào thông tin name -->
-              <div class="p-2">
-                <div style="position: relative;">
-                  <input placeholder="Name *" type="text" />
-                  <button style=" position: absolute; right: 25px; top:12px; background: transparent; border-color: transparent; outline: 0;"
-                    type="submit" class="button  fa fa-arrow-right"></button>
+        <img src="images/light.png" style=" width:100% ; height:auto;" class="img-fluid child animate " /> 
+        <img src="images/MainCar.jpg" style=" width:100% ; height:auto;" class="img-fluid cha" />
+          <div class="menu child-menu ">
+              <div id="mySidenav" class="sidenav" >
+                  <i class="title">Menu</i>
+                  <ul>
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
+                  </ul>
+                  
                 </div>
-              </div>
-              <!-- Điền vào thông tin email -->
-              <div class="p-2">
-                <div style="position: relative;">
-                  <input placeholder="Emailss *" type="text" />
-                  <button style=" position: absolute; right: 25px; top:12px; background: transparent; border-color: transparent; outline: 0;"
-                    type="submit" class="button  fa fa-arrow-right"></button>
-                </div>
-              </div>
-              <!-- Điền vào thông tin message -->
-              <div class="p-2">
-                <div style="position: relative;">
-                  <input placeholder="Message *" type="text" />
-                  <button style=" position: absolute; right: 25px; top:12px; background: transparent; border-color: transparent; outline: 0;"
-                    type="submit" class="button  fa fa-arrow-right"></button>
-                </div>
-              </div>
-            </div>
-
-
+                
+              <nav role="navigation"  class="navigation navigation-active"  >
+                  
+                  <div id="menuToggle">
+                        <input type="checkbox" id="btnHamberger_On" />
+          
+                        <span></span>
+                        <span></span>
+                        <span></span>
+          
+                  </div>
+                </nav>
           </div>
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </div>
-    <!-- end contact -->
+      </header>
+  
+   
+  
+ 
 
 
-    </div>
-    <!-- end end-->
 
-    <div class="f2">
-      <nav class="navbar  navbar-expand-lg">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item"><a class="nav-link" target="_blank" href="http://facebook.com"><span class="fa fa-facebook"></span></a></li>
-          <li class=" nav-item"><a class="nav-link" target="_blank" href="http://twitter.com"><span class="fa fa-youtube"></span></a></li>
-          <li class=" nav-item"><a class="nav-link" target="_blank" href="http://google.com"><span class="fa fa-google"></span></a></li>
-          <li class=" nav-item"><a class="nav-link" target="_blank" href="http://youtube.com"><span
-                class="fa fa-twitter"></span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+
+      
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+$('.child-menu').on('click', '#btnHamberger_On', function () {
+  document.getElementById("mySidenav").style.width = "50%";
+  // hiển thị hover màu xám
+  console.log(document.getElementsByClassName('navigation'))
+  document.getElementsByClassName('navigation')[0].classList = 'navigation navigation-active'
+  this.setAttribute('id','btnHamberger_Off')
+});
+
+$('.child-menu').on('click', '#btnHamberger_Off', function () {
+  document.getElementById("mySidenav").style.width = "0";
+  // trở lại trạng thái ban đầu
+  document.getElementsByClassName('navigation')[0].classList = 'navigation '
+  this.setAttribute('id','btnHamberger_On')
+//   $(".child-menu").hover(function(){
+//     alert(this)
+//     console.log(this)
+//     $(this).css("background", "#1F1F1F");
+//     }, function(){
+//     $(this).css("background", "transparent");
+// });
+});
+
+
+
+
+  </script>
 </body>
 
 </html>
