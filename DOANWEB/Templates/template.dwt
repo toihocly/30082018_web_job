@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>HOME</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+ 
+<link rel="stylesheet" type="text/css" href="../css/default.css" /> 
+<!-- TemplateBeginEditable name="Header" -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+    <header class="container-fluid header-parent">
+      <div class="logo child-logo"> <a href="../index.html"><img src="../logo/logo.jpg" /></a>  </div>
+        <!--end logoH-->
+    
+        <img src="../images/light.png" style=" width:100% ; height:auto;" class="img-fluid child animate " /> 
+        <img src="../images/MainCar.jpg" style=" width:100% ; height:auto;" class="img-fluid parent" />
+          <div class="menu child-menu ">
+              <div id="mySidenav" class="sidenav" >
+                  <i class="title">Menu</i>
+                 <!-- TemplateBeginEditable name="Menu" -->
+                  <ul>
+                      <a href="../html/Abous.html">Giới thiệu</a>
+                      <a href="../html/Products.html">sản phẩm</a>
+                      <a href="../html/News.html">tin tức</a>
+                      <a href="../html/Contact.html">Liên hệ</a>
+                  </ul>
+                  <!-- TemplateEndEditable -->
+            </div>
+                
+              <nav role="navigation"  class="navigation navigation-active"  >
+                  
+                  <div id="menuToggle">
+                        <input type="checkbox" id="btnHamberger_On" />
+          
+                        <span></span>
+                        <span></span>
+                        <span></span>
+          
+                  </div>
+            </nav>
+          </div>
+      </header>
+    <!-- TemplateBeginEditable name="main" -->
+    
+    <!-- TemplateEndEditable -->
+    <footer class="container-fluid">
+    
+      <div class="f2">
+          <nav class="navbar  navbar-expand-lg">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" target="_blank" href="http://facebook.com"><span class="fa fa-facebook"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://twitter.com"><span class="fa fa-youtube"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://google.com"><span class="fa fa-google"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://youtube.com"><span
+                    class="fa fa-twitter"></span></a></li>
+            </ul>
+          </nav>
+      </div>
+</footer>
+
+
+
+
+      
+  <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/default.js"></script>
+<script >
+
+</script>
+<!-- TemplateBeginEditable name="javascript:;" -->
+<script>
+  </script>
+  
+  <!-- TemplateEndEditable -->
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>LAI THU</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+ 
+<link rel="stylesheet" type="text/css" href="../css/default.css" /> 
+<!-- InstanceBeginEditable name="Header" -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <header class="container-fluid header-parent">
+      <div class="logo child-logo"> <a href="../index.html"><img src="../logo/logo.jpg" /></a>  </div>
+        <!--end logoH-->
+    
+        <img src="../images/light.png" style=" width:100% ; height:auto;" class="img-fluid child animate " /> 
+        <img src="../images/MainCar.jpg" style=" width:100% ; height:auto;" class="img-fluid parent" />
+          <div class="menu child-menu ">
+              <div id="mySidenav" class="sidenav" >
+                  <i class="title">Menu</i>
+                 <!-- InstanceBeginEditable name="Menu" -->
+                  <ul>
+                      <a href="./Abous.html">Giới thiệu</a>
+                      <a href="./Products.html">sản phẩm</a>
+                      <a href="./News.html">tin tức</a>
+                      <a href="./Contact.html">Liên hệ</a>
+                  </ul>
+                  <!-- InstanceEndEditable -->
+            </div>
+                
+              <nav role="navigation"  class="navigation navigation-active"  >
+                  
+                  <div id="menuToggle">
+                        <input type="checkbox" id="btnHamberger_On" />
+          
+                        <span></span>
+                        <span></span>
+                        <span></span>
+          
+                  </div>
+            </nav>
+          </div>
+      </header>
+    <!-- InstanceBeginEditable name="main" -->
+    <section id="Try_Drive" class="container">
+    <h1>ĐĂNG KÍ LÁI THỬ</h1>
+
+    <form id="frmyc" name="frmyc" action="dang-ki-lai-thu" method="post">
+      <script type="text/javascript">
+        function ktloaixe(id) {
+          $.ajax({
+            url: "xuly.php",
+            type: "post",
+            cache: false,
+            data: { idhai: id },
+            success: function (result) {
+
+              $('.cacloaixe').html(result);
+
+            }
+          });
+          //var a = document.getElementById('anhinh'+id).value;
+
+          $('.hinhsp').css('background', 'url("upload/sanpham/' + document.getElementById('anhinh' + id).value + '") center no-repeat');
+          $('.hinhsp').css('background-size', '315px 200px');
+          //document.getElementById('giasp').value = b;
+
+        }
+
+      </script>
+      <div class="row">
+        <div class=" col-sm-12 col-lg-4">
+          <div style="width: 100%;min-height: 400px;overflow: hidden;border:1px solid #670a0a;background: #fff;padding: 15px;">
+            <a style="padding: 5px 10px;border-radius: 15px;background: #9d9d9d;color: #fff;">1</a><span style="font-family: utmavobold;font-size: 16px;margin-left: 10px;">Chọn
+              loại xe</span>
+            <div style="width:100%;min-height: 20px;overflow: hidden;" align="center">
+              <img src="../images/no_image.png" class="img-fluid"/>
+            </div>
+            <div align="center" style="font-size: 13px;margin-top: 5px;">Vui lòng chọn loại xe mà bạn quan tâm</div>
+            <select onchange="ktloaixe(this.value)" name="loaixe" id="loaixe" style="padding: 5px;width:100%;margin-top: 5px;">
+              <option value="0">Chọn dòng xe</option>
+
+              <option value="36">A</option>
+
+
+              <option value="34">CLA</option>
+
+
+              <option value="33">C</option>
+
+
+              <option value="32">E</option>
+
+
+              <option value="23">S</option>
+
+
+              <option value="22">GLA</option>
+
+
+              <option value="24">GLC</option>
+
+
+              <option value="21">GLE</option>
+
+
+              <option value="25">GLS</option>
+
+
+              <option value="45">Dream Car</option>
+
+
+              <option value="43">7 chỗ</option>
+
+
+            </select>
+
+
+            <input type="hidden" id="anhinh36" value="207329786794.jpg">
+            <input type="hidden" id="angia36" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh34" value="730673477253.jpg">
+            <input type="hidden" id="angia34" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh33" value="364480440650.jpg">
+            <input type="hidden" id="angia33" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh32" value="295105253981.png">
+            <input type="hidden" id="angia32" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh23" value="601776546761.jpg">
+            <input type="hidden" id="angia23" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh22" value="701873371313.jpg">
+            <input type="hidden" id="angia22" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh24" value="588305086346.jpg">
+            <input type="hidden" id="angia24" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh21" value="811774517346.jpg">
+            <input type="hidden" id="angia21" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh25" value="887604013516.jpg">
+            <input type="hidden" id="angia25" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh45" value="121046535082.jpg">
+            <input type="hidden" id="angia45" value=" USD">
+
+
+
+            <input type="hidden" id="anhinh43" value="689076683040.png">
+            <input type="hidden" id="angia43" value=" USD">
+
+
+            <div style="width:100%;margin-top: 5px;height: 25px;" class="cacloaixe"></div>
+            <!-- <input type="text" name="giasp" id="giasp" value="Tổng giá" style="width:100%;padding: 7px;background: #b1b1b1;border: none;text-align: center;margin-top: 30px;color:#fff;"> -->
+            <div align="center" style="margin-top: 10px;">Giá bán được nêu ở đây chưa bao gồm các phụ kiện, trang thiết bị
+              cộng thêm, phí bảo hiểm và các loại phí khác được áp dụng khi mua xe.</div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div style="width: 100%;min-height: 400px;overflow: hidden;border:1px solid #670a0a;background: #fff;padding: 15px;">
+            <a style="padding: 5px 10px;border-radius: 15px;background: #9d9d9d;color: #fff;">2</a><span style="font-family: utmavobold;font-size: 16px;margin-left: 10px;">Thông
+              tin liên hệ của bạn</span>
+            <div style="font-size: 12px;margin-top: 15px;margin-bottom: 40px;">* là phần bắt buộc</div>
+
+            <div class="row field_value">
+              <div class="main col-lg-12">
+                <div class="row">
+                  <div class="col-lg-4 label">Họ :</div>
+                  <div class="col-lg-8 text"><input type="text" name="hokh" ></div>
+                </div>
+              </div>
+              <div class="main col-lg-12">
+                <div class="row">
+                  <div class="col-lg-4 label">Tên :</div>
+                  <div class="col-lg-8 text"><input type="text" name="tenkh" ></div>
+                </div>
+              </div>
+              <div class="main col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-4 label">Email *:</div>
+                    <div class="col-lg-8 text"><input type="text" name="emailkh" id="emailkh" ></div>
+                  </div>
+                </div>
+                <div class="main col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-4 label">Điện thoại *:</div>
+                      <div class="col-lg-8 text"><input type="text"  name="dtkh" id="dtkh" ></div>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div style="width: 100%;min-height: 400px;overflow: hidden;border:1px solid #670a0a;background: #fff;padding: 15px;">
+            <a style="padding: 5px 10px;border-radius: 15px;background: #9d9d9d;color: #fff;">3</a><span style="font-family: utmavobold;font-size: 16px;margin-left: 10px;">Quy
+              định pháp lý</span>
+            <div class="clear"></div>
+            <div style="margin-top: 20px;" align="center">
+              <input type="checkbox" name="dkok" style="float:left;">
+
+              <div style="float:left;width:90%;margin-left: 5px;text-align: justify;">Tôi đồng ý để Mercedes-Benz lưu trữ
+                thông tin cá nhân cho mục đích nghiên cứu thị trường, theo dõi doanh số và để liên lạc với tôi, Mercedes-Benz
+                cũng có thể tiết lộ thông tin này trong nội bộ tập đoàn (Tập Đòan General Motors) và các đại lý và đại diện
+                bán hàng với mục đích trên. Thông tin chúng tôi thu thập từ bạn sẽ được chuyển, lưu và xử lý bởi nhân viên
+                của chúng tôi hoặc của các đơn vị cung cấp dịch vụ bên ngoài Việt Nam. Chúng tôi sẽ làm tất cả những gì cần
+                thiết để đảm bảo thông tin của bạn được xử lý đúng quy định an toàn và luật pháp hiện hành.</div>
+
+            </div>
+            <div class="clear"></div>
+            <div style="width:100%;" align="center">
+              <input onclick="js_submit2();" type="button" name="guiyeucau" value="Gửi yêu cầu" style="padding: 5px 10px;border: none;background: #9d9d9d;color:#fff;margin-top: 15px;border-bottom: 3px solid #ccc;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </section>
+    <!-- InstanceEndEditable -->
+    <footer class="container-fluid">
+    
+      <div class="f2">
+          <nav class="navbar  navbar-expand-lg">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" target="_blank" href="http://facebook.com"><span class="fa fa-facebook"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://twitter.com"><span class="fa fa-youtube"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://google.com"><span class="fa fa-google"></span></a></li>
+              <li class=" nav-item"><a class="nav-link" target="_blank" href="http://youtube.com"><span
+                    class="fa fa-twitter"></span></a></li>
+            </ul>
+          </nav>
+      </div>
+</footer>
+
+
+
+
+      
+  <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/default.js"></script>
+<!-- InstanceBeginEditable name="javascript:;" -->
+<script>
+  </script>
+  <!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
